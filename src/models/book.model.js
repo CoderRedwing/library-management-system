@@ -18,7 +18,8 @@ const bookSchema = new mongoose.Schema({
     coverImage: {
         type: String
     },
-});
+},{timestamps: true}
+);
 
 const Book = mongoose.model('Book', bookSchema);
 
